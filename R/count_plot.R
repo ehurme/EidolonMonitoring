@@ -11,4 +11,7 @@ summary(batdf)
 
 accra <- batdf[batdf$Location == "Accra",]
 
-plot(accra$timestamp, accra$Count, type = "l")
+plot(accra$timestamp, accra$Count, type = "l",
+     ylab = "Count", xlab = "Time")
+years <- unique(year(batdf$timestamp))
+abline(v = ymd(paste0(years,"-01-01")), lty = 2)

@@ -35,3 +35,8 @@ RWA_msk_alt.vrt
 RWA_msk_alt.gri
 RWA_msk_alt.grd
 Accra_count.png
+*.png
+*.geojson
+*.csv
+*.npz
+*.pdf
